@@ -1,76 +1,77 @@
-# find_file_true
-# Dosya Listeleme Uygulaması
+<h1>Dosya Listeleme Uygulaması</h1>
 
-Bu basit Python uygulaması, belirli bir klasördeki dosyaları listeler ve dosyaların gerçek uzantılarına göre renklendirme yapar.
-Klasörün içindeki dosyaların gerçek uzantılarını bize gösterir.Eğer dosyanın uzantısı ile programın bize sunduğu uzantı eşleşmiyorsa o sütunu kırmızı yazar.
-Her dosya için bir ID kullanarak dosyaları Treeview widgetına ekler.
-Programı çalıştıracağınız dizin içinde başka dizin olmamalı sadece dosyalar olmalı.Bunu 2.versiyonda geşitricem
+<p>Bu basit Python uygulaması, belirli bir klasördeki dosyaları listeler ve dosyaların gerçek uzantılarına göre renklendirme yapar. Klasörün içindeki dosyaların gerçek uzantılarını gösterir ve eğer dosyanın uzantısı ile programın bize sunduğu uzantı eşleşmiyorsa o sütunu kırmızı renkte belirtir. Her dosya için bir ID kullanarak dosyaları Treeview widget'ına ekler. Programı çalıştıracağınız dizin içinde başka dizin olmamalı, sadece dosyalar olmalı. Bu özellik 2. versiyonda eklenmiştir.</p>
 
+<h2>Belirlenen Dosya Türleri ve Gerçek Uzantılar</h2>
 
-Programda belirlenen bazı dosya türleri ve gerçek uzantıları şunlar :
+<ul>
+  <li>JPEG dosyaları: <code>.jpeg</code> uzantısı</li>
+  <li>PNG dosyaları: <code>.png</code> uzantısı</li>
+  <li>GIF dosyaları: <code>.gif</code> uzantısı</li>
+  <li>MP3 dosyaları: <code>.mp3</code> uzantısı</li>
+  <li>PDF dosyaları: <code>.pdf</code> uzantısı</li>
+  <li>DOCX dosyaları: <code>.docx</code> uzantısı</li>
+  <li>XLSX dosyaları: <code>.xlsx</code> uzantısı</li>
+  <li>PPTX dosyaları: <code>.pptx</code> uzantısı</li>
+  <li>Access dosyaları: <code>.accdb</code> uzantısı</li>
+  <li>ODT dosyaları: <code>.odt</code> uzantısı</li>
+  <li>ODS dosyaları: <code>.ods</code> uzantısı</li>
+  <li>ODP dosyaları: <code>.odp</code> uzantısı</li>
+  <li>XLS dosyaları: <code>.xls</code> uzantısı</li>
+  <li>DOC dosyaları: <code>.doc</code> uzantısı</li>
+  <li>PPT dosyaları: <code>.ppt</code> uzantısı</li>
+  <li>Metin dosyaları: <code>.txt</code> uzantısı</li>
+  <li>CSV dosyaları: <code>.csv</code> uzantısı</li>
+  <li>HTML dosyaları: <code>.html</code> uzantısı</li>
+  <li>Exe dosyaları: <code>.exe</code> uzantısı</li>
+  
+</ul>
 
-JPEG dosyaları: .jpeg uzantısı\n
-PNG dosyaları: .png uzantısı
-GIF dosyaları: .gif uzantısı
-MP3 dosyaları: .mp3 uzantısı
-PDF dosyaları: .pdf uzantısı
-DOCX dosyaları: .docx uzantısı
-XLSX dosyaları: .xlsx uzantısı
-PPTX dosyaları: .pptx uzantısı
-Access dosyaları: .accdb uzantısı
-ODT dosyaları: .odt uzantısı
-ODS dosyaları: .ods uzantısı
-ODP dosyaları: .odp uzantısı
-XLS dosyaları: .xls uzantısı
-DOC dosyaları: .doc uzantısı
-PPT dosyaları: .ppt uzantısı
-Metin dosyaları: .txt uzantısı
-CSV dosyaları: .csv uzantısı
-HTML dosyaları: .html uzantısı
-Exe dosyaları: .exe uzantısı
+<h2>Başlangıç</h2>
 
+<p>Uygulamayı kullanmaya başlamak için aşağıdaki adımları takip edebilirsiniz.</p>
 
-## Başlangıç
+<h3>Gereksinimler</h3>
 
-Uygulamayı kullanmaya başlamak için aşağıdaki adımları takip edebilirsiniz.
+<ul>
+  <li>Python (3.x sürümü önerilir)</li>
+  <li>Tkinter kütüphanesi</li>
+  <li>Magic kütüphanesi</li>
+</ul>
 
-### Gereksinimler
+<h3>Kurulum</h3>
 
-- Python (3.x sürümü önerilir)
-- Tkinter kütüphanesi
-- Magic kütüphanesi
+<ol>
+  <li>Depoyu klonlayın:</li>
+</ol>
 
-### Kurulum
+<pre>
+<code>git clone https://github.com/ozan-B/find_file_true
+cd find_file_true</code>
+</pre>
 
-1. Depoyu klonlayın:
+<ol start="2">
+  <li>Uygulamayı başlatın:</li>
+</ol>
 
-    ```bash
-    git clone https://github.com/ozan-B/find_file_true
-    cd find_file_true
-    ```
+<pre>
+<code>python3 main.py</code>
+</pre>
 
+<h2>Kullanım</h2>
 
-    ```
+<p>"Klasör Seç" düğmesine tıklayarak bir klasör seçin. Uygulama, seçilen klasördeki dosyaları listeleyecek ve gerçek uzantılarına göre renklendirme yapacaktır.</p>
 
-3. Uygulamayı başlatın:
+<h2>Katkıda Bulunma</h2>
 
-    ```bash
-    python3 main.py
-    ```
+<ol>
+  <li>Bu depoyu forklayın.</li>
+  <li>Yeni bir dal oluşturun (<code>git checkout -b feature/yenifonksiyon</code>).</li>
+  <li>Yaptığınız değişiklikleri commit edin (<code>git commit -am 'Yeni fonksiyon eklendi'</code>).</li>
+  <li>Dalınıza itme yapın (<code>git push origin feature/yenifonksiyon</code>).</li>
+  <li>Bir Pull Request oluşturun.</li>
+</ol>
 
-## Kullanım
+<h2>Lisans</h2>
 
-- "Klasör Seç" düğmesine tıklayarak bir klasör seçin.
-- Uygulama, seçilen klasördeki dosyaları listeleyecek ve gerçek uzantılarına göre renklendirme yapacaktır.
-
-## Katkıda Bulunma
-
-1. Bu depoyu forklayın.
-2. Yeni bir dal oluşturun (`git checkout -b feature/yenifonksiyon`).
-3. Yaptığınız değişiklikleri commit edin (`git commit -am 'Yeni fonksiyon eklendi'`).
-4. Dalınıza itme yapın (`git push origin feature/yenifonksiyon`).
-5. Bir Pull Request oluşturun.
-
-## Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
+<p>Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için <a href="LICENSE">LICENSE</a> dosyasına göz atabilirsiniz.</p>
