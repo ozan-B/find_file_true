@@ -55,7 +55,7 @@ cd find_file_true</code>
 </ol>
 
 <pre>
-<code>python3 main.py</code>
+<code>python3 true_file.py</code>
 </pre>
 
 <h2>Kullanım</h2>
