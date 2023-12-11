@@ -9,7 +9,7 @@ Programı çalıştıracağınız dizin içinde başka dizin olmamalı sadece do
 
 Programda belirlenen bazı dosya türleri ve gerçek uzantıları şunlar :
 
-JPEG dosyaları: .jpeg uzantısı
+JPEG dosyaları: .jpeg uzantısı\n
 PNG dosyaları: .png uzantısı
 GIF dosyaları: .gif uzantısı
 MP3 dosyaları: .mp3 uzantısı
